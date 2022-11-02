@@ -15,6 +15,7 @@ body {
 .sidebar {
   grid-area: sidebar;
   background-color: rgb(69, 144, 206);
+  color: white;
 }
 
 .main {
