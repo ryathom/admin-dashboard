@@ -1,7 +1,7 @@
 body {
   height: 100vh;
   display: grid;
-  grid-template: 200px 1fr 50px / 250px 4fr;
+  grid-template: 150px 1fr 50px / 250px 4fr;
 
   grid-template-areas:  "sidebar header"
                         "sidebar main"
@@ -12,6 +12,93 @@ body {
 
 .header {
   grid-area: header;
+
+  display: grid;
+  grid-template: 2fr 3fr / 2fr 1fr;
+
+  grid-gap: 5px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.header>.search {
+  display: grid;
+  grid-template: 1fr / 20px 90%;
+
+  align-content: center;
+}
+
+.search-bar {
+  background-color: rgb(227, 232, 239);
+  border-radius: 1em;
+  margin: 1em;
+}
+
+.search>.icon {
+  justify-self: center;
+  align-self: center;
+}
+
+.profile-controls {
+  display: grid;
+  grid-template: 1fr / auto auto auto;
+  grid-gap: 20px;
+
+  align-items: center;
+  justify-content: right;
+}
+
+.greeting {
+  display: grid;
+  grid-template-columns: 80px auto;
+
+  align-items: center;
+}
+
+.content-controls {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: right;
+}
+
+.content-control {
+  background-color: rgb(69, 144, 206);
+  color: white;
+  padding: 5px 15px;
+  border-radius: 15px;
+  border-width: 0px;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  margin: 5px;
+
+  cursor: pointer;
+}
+
+.user-avatar-small {
+  height: 30px;
+  cursor: pointer;
+}
+
+.user-avatar-large {
+  height: 60px;
+  cursor: pointer;
+}
+
+h1 {
+  font-weight: 800;
+  cursor: pointer;
+}
+
+h4 {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.mdi-bell-ring-outline {
+  cursor: pointer;
 }
 
 .sidebar {
