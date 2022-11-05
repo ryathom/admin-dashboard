@@ -1,11 +1,10 @@
 body {
   height: 100vh;
   display: grid;
-  grid-template: 150px 1fr 50px / 250px 4fr;
+  grid-template: 150px 1fr / 250px 4fr;
 
   grid-template-areas:  "sidebar header"
-                        "sidebar main"
-                        "sidebar footer";
+                        "sidebar main";
 
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -144,7 +143,7 @@ h4 {
   background-color: rgb(227, 232, 239);
 
   display: grid;
-  grid-template: 1fr 1fr / 2fr 1fr;
+  grid-template: 1fr 1fr / auto auto;
   grid-gap: 20px;
   padding: 10px;
   padding-top: 20px;
@@ -199,7 +198,7 @@ h4 {
 
 .announcement-card {
   background-color: white;
-  margin: 10px;
+  margin: 20px;
 
   padding: 10px;
   border-radius: 10px;
@@ -227,7 +226,20 @@ h4 {
   margin: 8px;
 }
 
-.footer {
+/* .footer {
   grid-area: footer;
   background-color: rgb(37, 57, 133);
+} */
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(37, 57, 133);
+
+  color: white;
+  text-align: center;
+  font-size: 8px;
+  padding: 5px;
 }
