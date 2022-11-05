@@ -32,6 +32,8 @@ body {
   background-color: rgb(227, 232, 239);
   border-radius: 1em;
   margin: 1em;
+
+  border-width: 0px;
 }
 
 .search>.icon {
