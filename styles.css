@@ -147,12 +147,11 @@ h4 {
   grid-template: 1fr 1fr / 2fr 1fr;
   grid-gap: 20px;
   padding: 10px;
+  padding-top: 20px;
 }
 
 .main-projects {
   grid-row: 1 / 3;
-
-  padding-top: 10px;
 }
 
 .main-projects-card-grid {
@@ -196,6 +195,36 @@ h4 {
 
 .project-icons>span {
   cursor: pointer;
+}
+
+.announcement-card {
+  background-color: white;
+  margin: 10px;
+
+  padding: 10px;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.announcement {
+  border-bottom: 1px solid grey;
+}
+
+.announcement:last-of-type {
+  border-bottom: none;
+}
+
+.announcement>h2 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 8px;
+}
+
+.announcement>p {
+  font-size: 12px;
+  margin: 8px;
 }
 
 .footer {
