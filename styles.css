@@ -91,7 +91,6 @@ body {
 h1 {
   font-weight: 800;
   font-size: 20px;
-  cursor: pointer;
   margin-bottom: 10px;
 }
 
@@ -196,7 +195,7 @@ h4 {
   cursor: pointer;
 }
 
-.announcement-card {
+.announcement-card, .trending-card {
   background-color: white;
   margin: 20px;
 
@@ -226,10 +225,24 @@ h4 {
   margin: 8px;
 }
 
-.announcement-card, .project-card {
-  -webkit-box-shadow: 2px 1px 4px 1px rgba(0,0,0,0.57); 
-  box-shadow: 2px 1px 4px 1px rgba(0,0,0,0.57);
+.announcement-card, .project-card, .trending-card {
+  -webkit-box-shadow: 2px 1px 4px 1px rgba(0,0,0,0.4); 
+  box-shadow: 2px 1px 4px 1px rgba(0,0,0,0.4);
 }
+
+.trending-box {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 10px;
+
+  margin: 10px;
+}
+
+.username {
+  font-weight: 600;
+  cursor: pointer;
+}
+
 
 .footer {
   position: fixed;
